@@ -141,6 +141,28 @@ function App() {
   const handleVolumeDown = () => setVolume(Math.max(0, volume - 0.1));
   const handleVolumeUp = () => setVolume(Math.min(1, volume + 0.1));
 
+  
+const btnStyle = {
+  backgroundColor: "#555",
+  color: "#fff",
+  border: "none",
+  borderRadius: "8px",
+  padding: "8px 16px",
+  fontSize: "16px",
+  cursor: "pointer",
+};
+
+const volumeBtnStyle = {
+  backgroundColor: "#777",
+  color: "#fff",
+  border: "none",
+  borderRadius: "4px",
+  padding: "4px 8px",
+  fontSize: "14px",
+  cursor: "pointer",
+  marginLeft: "10px",
+};
+
   return (
     <div
       style={{
@@ -292,25 +314,5 @@ function App() {
   );
 }
 
-const btnStyle = {
-  backgroundColor: "#555",
-  color: "#fff",
-  border: "none",
-  borderRadius: "8px",
-  padding: "8px 16px",
-  fontSize: "16px",
-  cursor: "pointer",
-};
-
-const volumeBtnStyle = {
-  backgroundColor: "#777",
-  color: "#fff",
-  border: "none",
-  borderRadius: "4px",
-  padding: "4px 8px",
-  fontSize: "14px",
-  cursor: "pointer",
-  marginLeft: "10px",
-};
 
 export default App;
