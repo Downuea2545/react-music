@@ -189,8 +189,8 @@ const volumeBtnStyle = {
       >
         <div
           style={{
-            width: "460px",
-            height: "460px",
+            width: "510px",
+            height: "510px",
             borderRadius: "50%",
             overflow: "hidden",
             marginRight: "30px",
@@ -198,14 +198,15 @@ const volumeBtnStyle = {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            marginTop: "-5px",
           }}
         >
           <img
             src={currentTrack.image}
             alt={currentTrack.title}
             style={{
-              width: "460px",
-              height: "460px",
+              width: "510px",
+              height: "510px",
               objectFit: "cover",
               borderRadius: "50%",
               animation: isRotating ? "spin 4s linear infinite" : "none",
